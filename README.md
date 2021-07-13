@@ -135,8 +135,10 @@ Then create the release:
 
 Then publish the release:
 
-* In the updated master branch, run `npm publish`
-* Push the new git tag created by `npm version` with `git push --tags`
+* In the updated master branch, run
+  * `yarn install` (to install rollup/etc on your machine)
+  * `npm publish`
+  * `git push --tags` (to push the tag created by `npm version` to github)
 * In github, create a new release and describe the changes
 
 
